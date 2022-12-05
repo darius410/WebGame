@@ -64,3 +64,7 @@ a, a:hover, a:focus, a:active a:visited{
   text-decoration: none;
   color: inherit;
 }
+/*=========IMAGES===========*/
+img{
+  max-width: 100%;
+}
