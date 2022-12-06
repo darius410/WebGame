@@ -7,8 +7,7 @@ The 'To Do' List 📃
 -Consider using media query expressions/ranged selectors
 @media (300px <= width <= 600px;) or (orientation:landscape){}
 
-
-//nav
+nav
     -get a better logo icon for mobile and desktop
     -space out the donate button and social media icons better
     -add a toggle nav menu for the main links on mobile devices 
