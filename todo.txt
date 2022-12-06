@@ -1,9 +1,7 @@
-////NOTES 
-Consider using media query expressions/ranged selectors
+The 'To Do' List 📃 
+
+-Consider using media query expressions/ranged selectors
 @media (300px <= width <= 600px;) or (orientation:landscape){}
-
-
-
 
 
 //nav
@@ -16,15 +14,15 @@ Consider using media query expressions/ranged selectors
     -make the background image for the sky align better on mobile screens
 //how To Play
     -control  sizing of h1 with media queries
-    -control sizing of images on all screen sizes
-    -find a way for the text to align better without
+    ✅-control sizing of images on all screen sizes
+    ✅-find a way for the text to align better without
         un-natural spacing and gaps.
     -add a pixel like background to continue
         the design of a game layout
 //Featured Sites
-    -add other svg site logos 
+    ✅-add other svg site logos 
     -control size of h1 with media queries
-    -add 8 bit rounded corners to each site bubble
+    ✅-add 8 bit rounded corners to each site bubble
 //Footer
     -Add hover style to links
     -add font-sizes to media queries for h3
