@@ -8,8 +8,8 @@ The 'To Do' List 📃
 @media (300px <= width <= 600px;) or (orientation:landscape){}
 
 nav
-    -get a better logo icon for mobile and desktop
-    -space out the donate button and social media icons better
+-get a better logo icon for mobile and desktop
+-space out the donate button and social media icons better
     -add a toggle nav menu for the main links on mobile devices 
 //hero
     - Paralax the image layers between 
