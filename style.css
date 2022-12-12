@@ -26,7 +26,7 @@ body{
 
 section.about{
     
-    background-color: #22636b;
+    background-color:#112024;
 
 }
 
@@ -96,7 +96,7 @@ ul li{
         text-align: center;
         font-family:var(--ff-primary);
         font-size: 1.95rem;
-        padding: 15px;
+        padding: 20px;
         text-decoration: none;
         color: white;
         box-shadow: inset -4px -4px 0px 0px #feff73;
@@ -108,6 +108,15 @@ ul li{
     border-top: 4px black solid;
     border-bottom: 4px black solid;
 }
+.donateButton:before, .donateButton:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+}
+
+
 .donateButton:after{
     left: -4px;
     top: 0;
@@ -121,13 +130,7 @@ ul li{
 .donateButton:active {
     box-shadow: inset 4px 4px 0px 0px #feff73;
 }
-.donateButton:before, .donateButton:after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    box-sizing: content-box;
-  }
+
 
  
   .donateButton.account{
@@ -164,19 +167,33 @@ margin:.5em .5em;
     margin-top: 3.2em;
     }
     .homeContainer:after{
-    background-image:url("/img/Slice\ 1.png");
-    top: calc(100% - 45px);
-    background-position: bottom left;
+    background-image:url("/img/background/cliffL.png");
+    top: calc(100% - 100px);
+    background-position: top right;
     content: "";
     position: absolute;
-    left: 0;
+    right:0px;
+    opacity:1;
     width: 100%;
-    height: 50px;
-    background-size: contain;
-    background-repeat: repeat-x;
+    height: 500px;
+    background-size: 200px;
+    background-repeat:no-repeat;
+    z-index: 9;
+    
+}
+        .homeContainer:before{
+    background-image:url("/img/background/cliffR.png");
+    top: calc(100% - 100px);
+    background-position: top left;
+    content: "";
+    position: absolute;
+    left:0px;
+    width: 100%;
+    height: 500px;
+    background-size:200px;
+    background-repeat:no-repeat;
     z-index: 9;
 }
-    
 
 
   .mainHomeText h1{
@@ -242,7 +259,26 @@ text-align: center;
 
 /*======ABOUT SECTION ========*/
 .about{
+    
+     background:url("/img/background/cliffwallL.png") top left repeat-y,
+     url("/img/background/cliffwallR.png") top right repeat-y;
+     background-size:200px;
      padding:3rem 0;
+     height: 2200px;
+}
+
+.about:before{
+    background-image:url("/img/background/icons/grass1.png");
+    top: calc(100% - 35px);
+    background-position: bottom right;
+    content: "";
+    position: absolute;
+    right:-50px;
+    width: 100%;
+    height: 80px;
+   background-size: contain;
+   background-repeat:repeat;
+    z-index: 3;
     
    
 }
@@ -256,17 +292,20 @@ height: auto;
     flex-direction: column;
     display: flex;
     width:min(90%, 70.5rem);
+    
 
 }
 .aboutContainer h3{
 margin-bottom:50px;
+
 }
 
 h2.mageIcon:after{
     content:'';
     width:50px;
     height:50px;
-    background-color:red;
+    top:10px;
+    position: relative;
     background-size:50px 50px;
     background-repeat:no-repeat;
     display: inline-block;
@@ -274,6 +313,48 @@ h2.mageIcon:after{
     margin-left:20px;
 
     background-image:url(/img/background/icons/Icons8_38.png);
+}
+h2.shinobiIcon:after{
+    content:'';
+    width:50px;
+    height:50px;
+    top:10px;
+    position: relative;
+    background-size:50px 50px;
+    background-repeat:no-repeat;
+    display: inline-block;
+    
+    margin-left:20px;
+
+    background-image:url(/img/background/icons/Icon.1_47.png);
+}
+h2.roninIcon:after{
+    content:'';
+    width:50px;
+    height:50px;
+    top:10px;
+    position: relative;
+    background-size:50px 50px;
+    background-repeat:no-repeat;
+    display: inline-block;
+    
+    margin-left:20px;
+
+    background-image:url(/img/background/icons/Icon.1_68.png);
+}
+h2.knightIcon:after{
+    content:'';
+    width:50px;
+    height:50px;
+    top:10px;
+    position: relative;
+    background-size:50px 50px;
+    background-repeat:no-repeat;
+    display: inline-block;
+    
+    margin-left:20px;
+
+    background-image:url(/img/background/icons/Icon.5_12.png);
 }
 .aboutSplit{
     display:flex;
@@ -284,6 +365,9 @@ h2.mageIcon:after{
 .aboutSplit p{
     font-size: 1.3rem;
     font-weight: bold;
+}
+.aboutSplit h2{
+    line-height:2;
 }
 .aboutSplit,h2,p{
     margin:0px 20px;

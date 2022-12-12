@@ -2,7 +2,7 @@ The 'To Do' List 📃
 
 -Consider using media query expressions/ranged selectors
 @media (300px <= width <= 600px;) or (orientation:landscape){}
-
+ 600px, 900px, 1200px, and 1800px(maybe)
 
 //nav
     -get a better logo icon for mobile and desktop
@@ -14,6 +14,7 @@ The 'To Do' List 📃
     -make the background image for the sky align better on mobile screens
 //how To Play
     -control  sizing of h1 with media queries
+    -add icons to the left/right side of character names
     ✅-control sizing of images on all screen sizes
     ✅-find a way for the text to align better without
         un-natural spacing and gaps.
