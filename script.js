@@ -1,30 +1,10 @@
-var effects = {
-    fire : {
-      fire : 0.5,
-      grass : 2,
-      water : 0.5,
-      electric : 1
-    },
-    grass : {
-      fire : 0.5,
-      grass : 0.5,
-      water : 2,
-      electric : 1
-    },
-    water : {
-      fire : 2,
-      grass : 0.5,
-      water : 0.5,
-      electric : 0.5
-    },
-    electric : {
-      fire : 1,
-      grass : 1,
-      water : 2,
-      electric : 0.5
-    }
-  };
-  
-  function calculateDamage(yourType, opponentType, attack, defense){
-    return Math.ceil(50 * (attack/defense) * effects[yourType][opponentType]);
-  }
+window.addEventListener('scroll', function(e) {
+    const skyLayer = document.getElementById('clouds');
+    const landScape = document.getElementById('forGround');
+    const header = document.getElementById('firstHeader');
+    var scrollY = window.scrollY;
+    var rate = scrollY * 5;
+    header.style.transform = 'translate3d(200px' +rate+ '40px)';
+    skyLayer.style.transform = 'translate3d(200px,'+ rate + 'px, 40px)';
+    console.log("scroll active");
+});

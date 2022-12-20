@@ -51,23 +51,16 @@
     <!-------HERO SECTION OPENING FOLD------>
     <section id="homeContainer" class="homeContainer">
 
+<div id="laxing">
+        <div  class="ocean" id="ocean"></div>
+        <div class="forGround" id="forGround"></div>
+        <div class="clouds" id="clouds"></div>
 
-        <div class="ocean" id="ocean">
-
-        </div>
-
-        <div class="forGround" id="forGround">
-
-        </div>
-        <div class="clouds" id="clouds">
-
-        </div>
-
-
+</div>
 
         <header>
             <div id="mainHomeText" class="mainHomeText">
-                <h1>
+                <h1 id = "firstHeader">
                     Time To Play For Keeps
                 </h1>
                 <p>Reprehenderit est eiusmod elit pariatur sunt sit dolore minim
@@ -382,6 +375,21 @@
 
     </section>
 
+//  Paralx script
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        var scene = document.getElementById('laxing');
+        var parallaxInstance = new Parallax(scene, {
+            
+      
+            
+        });
+        parallaxInstance.friction(1, 0.2);
+        
+        
+    </script>
+
 </body>
+
 
 </html>
