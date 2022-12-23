@@ -60,6 +60,7 @@ justify-content:space-between;
 align-items: center;
 margin-top: 10px;
 max-height: 6em;
+min-width: 46.87rem;
 }
 ul li{
     display:inline;
@@ -265,6 +266,7 @@ text-align: center;
      background-size:200px;
      padding:3rem 0;
      height: 2200px;
+     color:darkgrey;
 }
 
 .about:before{
@@ -293,7 +295,6 @@ height: auto;
     display: flex;
     width:min(90%, 70.5rem);
     
-
 }
 .aboutContainer h3{
 margin-bottom:50px;
@@ -561,6 +562,8 @@ footer{
    
    /*===VERY SMALL===*/
    @media(max-width:50em) {
+
+   
     /*Nav
        
     */
@@ -574,7 +577,38 @@ footer{
       
       left:30px;
    }
+   /*=====HERO/HOME====*/
+
+   .homeContainer{
+    background-image:url(/img/background/sky.png);
+    background-repeat:repeat-x;
+    background-size:40%;
+   background-position: bottom;
+    height:100vh;
+    width:100%;
+  
+
+    }
+    .homeContainer:after{
+
+        background-size:clamp(100px,2vw,200px);
+      
+        
+    }
+            .homeContainer:before{
+        background-size:clamp(100px,2vw,200px);
+    }
+    
    /*=====ABOUT=====*/
+   
+   .about{
+    background:url("/img/background/cliffwallL.png") top left repeat-y,
+     url("/img/background/cliffwallR.png") top right repeat-y;
+     background-size:clamp(100px, 2vw ,500px);
+     padding:3rem 4rem;
+     height: auto;
+     
+   }
 .aboutSplit{
     display:flex;
     flex-direction: column;

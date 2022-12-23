@@ -11,15 +11,15 @@ The 'To Do' List 📃
 //hero
     - Paralax the image layers between 
        forground ,sky ,ocean and clouds and scrolling down.
-    -make the background image for the sky align better on mobile screens
+    ✅-make the background image for the sky align better on mobile screens
 //how To Play
     -control  sizing of h1 with media queries
-    -add icons to the left/right side of character names
+    -add icons and status info to the left/right side of character names
     ✅-control sizing of images on all screen sizes
     ✅-find a way for the text to align better without
         un-natural spacing and gaps.
-    -add a pixel like background to continue
-        the design of a game layout
+    -add a pixel like background to continue to the center of the about section
+       
 //Featured Sites
     ✅-add other svg site logos 
     -control size of h1 with media queries
